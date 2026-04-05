@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "entries": [
+    {
+      "content": "Always end code blocks with ``` on its own line. Never use ellipsis (...) in code.",
+      "section": "strategies_and_hard_rules"
+    },
+    {
+      "content": "Check API docs with `apis.api_docs.show_api_doc(app_name, api_name)` before calling any API.",
+      "section": "apis_to_use_for_specific_information"
+    },
+    {
+      "content": "Write small, incremental code chunks - verify each step works before proceeding.",
+      "section": "strategies_and_hard_rules"
+    },
+    {
+      "content": "Use `supervisor` app for account credentials: `apis.supervisor.show_account_passwords()`",
+      "section": "apis_to_use_for_specific_information"
+    },
+    {
+      "content": "Use `phone` app for contact/person lookup: `apis.phone.show_contacts()` to find friends/family.",
+      "section": "apis_to_use_for_specific_information"
+    },
+    {
+      "content": "Variables persist across code blocks - reuse them instead of re-fetching.",
+      "section": "strategies_and_hard_rules"
+    },
+    {
+      "content": "Paginated APIs require looping: `while True: page = api(page_index=i); if not page: break`",
+      "section": "useful_code_snippets_and_templates"
+    },
+    {
+      "content": "Example credentials shown in few-shot examples are FAKE - always fetch real credentials from supervisor.",
+      "section": "common_mistakes_and_correct_strategies"
+    },
+    {
+      "content": "Always call `apis.supervisor.complete_task()` when done - this marks the task complete. Only pass an `answer=` argument if the task explicitly asks you to find, calculate, or return a specific value. For action-only tasks (e.g., 'send a message', 'play a song'), call `complete_task()` with NO answer argument.",
+      "section": "verification_checklist"
+    }
+  ]
+}

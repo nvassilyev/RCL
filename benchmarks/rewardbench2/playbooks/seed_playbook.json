@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "content": "Score each candidate independently against the user prompt before comparing candidates to each other.",
+      "section": "core_ranking_criteria"
+    },
+    {
+      "content": "When the prompt contains explicit constraints, verify each candidate against every constraint instead of rewarding vague relevance.",
+      "section": "instruction_following_checks"
+    },
+    {
+      "content": "Penalize factual or mathematical mistakes even if the answer sounds polished or confident.",
+      "section": "factuality_and_math_checks"
+    },
+    {
+      "content": "Reward appropriate refusals only when the request is actually unsafe or disallowed; otherwise penalize unnecessary refusal.",
+      "section": "safety_and_refusal_calibration"
+    },
+    {
+      "content": "For multiple valid answers, keep the scores of correct answers close together and reserve larger gaps for separating correct from incorrect responses.",
+      "section": "tie_handling_and_score_calibration"
+    },
+    {
+      "content": "Do not let verbosity, politeness, or formatting polish outweigh correctness, constraint satisfaction, and relevance.",
+      "section": "common_mistakes"
+    }
+  ],
+  "version": "1.0"
+}

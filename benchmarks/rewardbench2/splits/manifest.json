@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15000000000000005
+  },
+  "counts": {
+    "train": {
+      "total": 1307,
+      "subsets": {
+        "Factuality": 333,
+        "Focus": 347,
+        "Math": 128,
+        "Precise IF": 112,
+        "Safety": 315,
+        "Ties": 72
+      }
+    },
+    "val": {
+      "total": 277,
+      "subsets": {
+        "Factuality": 71,
+        "Focus": 74,
+        "Math": 27,
+        "Precise IF": 24,
+        "Safety": 67,
+        "Ties": 14
+      }
+    },
+    "test": {
+      "total": 281,
+      "subsets": {
+        "Factuality": 71,
+        "Focus": 74,
+        "Math": 28,
+        "Precise IF": 24,
+        "Safety": 68,
+        "Ties": 16
+      }
+    }
+  }
+}
