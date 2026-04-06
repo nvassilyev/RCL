@@ -1,10 +1,15 @@
-# Reflective Context Learning (RCL)
+<h1 align="center">Reflective Context Learning</h1>
 
-**Official implementation of *Reflective Context Learning: Studying the Optimization Primitives of Context Space***
+<p align="center"><b>Studying the Optimization Primitives of Context Space</b></p>
 
-![RCL Loop](assets/rcl_loop.png)
+<p align="center">
+  <a href="https://arxiv.org/abs/2604.03189"><img src="https://img.shields.io/badge/arXiv-2604.03189-b31b1b.svg" alt="arXiv"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+</p>
 
-**Paper:** [Reflective Context Learning: Studying the Optimization Primitives of Context Space](https://arxiv.org/abs/XXXX.XXXXX)
+<p align="center">
+  <img src="assets/rcl_loop.png" alt="RCL Loop" width="720"/>
+</p>
 
 ## Overview
 
@@ -217,8 +222,8 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @article{rcl2026,
   title={Reflective Context Learning: Studying the Optimization Primitives of Context Space},
-  author={TODO},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  author={Vassilyev, Nikita and Berrios, William and Zhang, Ruowang and Han, Bo and Kiela, Douwe and Mehri, Shikib},
+  journal={arXiv preprint arXiv:2604.03189},
   year={2026}
 }
 ```
