@@ -1,4 +1,4 @@
-<h1 align="center">Reflective Context Learning</h1>
+<h1 align="center">Reflective Context Learning (RCL)</h1>
 
 <p align="center"><b>Studying the Optimization Primitives of Context Space</b></p>
 
@@ -13,7 +13,7 @@
 
 ## Overview
 
-Agents that learn from experience — reflecting on failures, updating their instructions, and improving over time — face the same fundamental optimization challenges as classical machine learning: high-variance updates, catastrophic forgetting, local optima, and inefficient credit assignment. Yet in context space, where the learned object is a prompt or playbook rather than model weights, these pathologies are addressed in an ad hoc, fragmented way.
+When agents learn from experience through reflection and iterative instruction updates, they face the same fundamental optimization challenges as classical machine learning: high-variance updates, catastrophic forgetting, local optima, and inefficient credit assignment. Yet in context space, where the learned object is a prompt or playbook rather than model weights, these pathologies are addressed in an ad hoc, fragmented way.
 
 RCL treats context-space adaptation as a first-class optimization problem. It formalizes a reflect-mutate loop — where *reflection* converts execution trajectories into a directional update signal (analogous to gradients) and *mutation* applies that signal to a structured playbook — then systematically extends it with classical optimization primitives: batching for variance reduction, dual-trace credit assignment, auxiliary losses for diagnostic structure, failure replay to prevent forgetting, and optimizer state for momentum. Across AppWorld, BrowseComp+, and RewardBench2, these primitives improve over strong baselines, with their relative importance shifting across task regimes.
 
